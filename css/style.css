@@ -339,4 +339,119 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.dashboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 188px auto;
+      grid-template-columns: 188px auto;
+  -ms-grid-rows: 60px 318px auto;
+      grid-template-rows: 60px 318px auto;
+  height: 100%;
+}
+
+.logo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #191919;
+  padding: 18px 20px;
+}
+
+.side-nav {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #191919;
+}
+
+.messanger {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #191919;
+  border-top: 1px solid #333333;
+}
+
+.top {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  border: 1px solid #e3e3e3;
+}
+
+.content {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/* Components */
+.side-nav__button {
+  margin-bottom: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  width: 188px;
+  height: 40px;
+  background-color: #191919;
+}
+
+.side-nav__button--active {
+  margin-bottom: 2px;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 188px;
+  height: 40px;
+  background-color: #282828;
+}
+
+.side-nav__button-svg {
+  padding: 13px 13px 13px 11px;
+  filter: invert(0.5);
+  min-width: 16px;
+  max-width: 18px;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.side-nav__button-svg--active {
+  padding: 12px;
+  filter: invert(1);
+}
+
+.side-nav__button-tracker {
+  width: 6px;
+  height: 40px;
+  padding-right: 1px;
+}
+
+.side-nav__button-tracker--active {
+  width: 4px;
+  height: 40px;
+  background-color: #f58220;
+  padding-right: 1px;
+}
+
+.side-nav__button-text {
+  padding: 13px 0;
+}
 /*# sourceMappingURL=style.css.map */
